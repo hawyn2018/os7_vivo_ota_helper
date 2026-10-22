@@ -17,6 +17,8 @@ zlib
   Embedded deflate/inflate implementation; compiled with Z_SOLO.
   License: third_party/zlib/LICENSE.
 
-The application JNI bridge, container reconstruction, CPIO index processing,
-DTB transformation, SHA-256 implementation and tests use SPDX-License-Identifier:
-MIT. Vendor firmware and captured images are test inputs, not embedded assets.
+The original application JNI bridge, container reconstruction, CPIO index
+processing, DTB transformation and tests use SPDX-License-Identifier:
+GPL-3.0-only. Copyright (c) 2026 Slot Assistant contributors.
+The third-party sources listed above retain their original licenses and notices.
+Vendor firmware and captured images are test inputs, not embedded assets.

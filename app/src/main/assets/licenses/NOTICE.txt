@@ -1,6 +1,7 @@
 LK Update Helper / lk升级助手
 
-Original application and native adapter sources: MIT (slot-assistant-LICENSE.txt).
+Original application and native adapter sources: GPL-3.0-only
+(slot-assistant-LICENSE.txt). Copyright (c) 2026 Slot Assistant contributors.
 
 Miuix UI and blur 0.9.4 — https://github.com/compose-miuix-ui/miuix
 Apache License 2.0, included as miuix-LICENSE.txt.

@@ -28,4 +28,8 @@ Windows 可使用 `gradlew.bat`。发布签名使用自己的密钥及本地 `si
 
 ## 许可证
 
-项目许可证见 [LICENSE](LICENSE)。第三方许可与版本说明见 [patcher/THIRD_PARTY_NOTICES.txt](patcher/THIRD_PARTY_NOTICES.txt) 和 `app/src/main/assets/licenses/`。
+本项目自有代码采用 **GNU General Public License v3.0 only（GPL-3.0-only）**，完整文本见 [LICENSE](LICENSE)。
+
+Copyright (c) 2026 Slot Assistant contributors.
+
+第三方依赖与随附源码保留各自原有许可证及版权声明，详见 [patcher/THIRD_PARTY_NOTICES.txt](patcher/THIRD_PARTY_NOTICES.txt) 和 `app/src/main/assets/licenses/`。

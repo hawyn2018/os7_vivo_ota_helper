@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: MIT
+// SPDX-License-Identifier: GPL-3.0-only
 #include "vendorpatch.hpp"
 #include <jni.h>
 extern "C" JNIEXPORT jstring JNICALL
