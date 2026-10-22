@@ -1,0 +1,22 @@
+libfdt
+  Upstream: https://git.kernel.org/pub/scm/utils/dtc/dtc.git/
+  Pinned commit: f99e3af0ecb67a9085478a9b8ddbcc25aa64931d
+  Source copied from the previously pinned local dtc_reference checkout.
+  License selected for this embedded library: BSD-2-Clause (dual-license option).
+  Notice: third_party/libfdt/LICENSE.BSD-2-Clause; source SPDX notices preserved.
+
+LZ4
+  Upstream: https://github.com/lz4/lz4
+  Tag: v1.10.0; commit ebb370ca83af193212df4dcbadcc5d87bc0de2f0
+  Embedded sources: lib/lz4.c, lz4.h, lz4hc.c, lz4hc.h.
+  BSD-2-Clause license: third_party/lz4/LICENSE.
+
+zlib
+  Upstream: https://github.com/madler/zlib
+  Tag: v1.3.1; commit 51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf
+  Embedded deflate/inflate implementation; compiled with Z_SOLO.
+  License: third_party/zlib/LICENSE.
+
+The application JNI bridge, container reconstruction, CPIO index processing,
+DTB transformation, SHA-256 implementation and tests use SPDX-License-Identifier:
+MIT. Vendor firmware and captured images are test inputs, not embedded assets.

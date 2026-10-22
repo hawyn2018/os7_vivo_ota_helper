@@ -1,0 +1,21 @@
+cmake_minimum_required(VERSION 3.18)
+project(vendorpatch LANGUAGES C CXX)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+set(FDT third_party/libfdt)
+set(Z third_party/zlib)
+set(SOURCES src/ramdisk.cpp src/dtb.cpp src/vendor.cpp src/file_api.cpp
+ third_party/lz4/lz4.c third_party/lz4/lz4hc.c
+ ${Z}/adler32.c ${Z}/crc32.c ${Z}/deflate.c ${Z}/inflate.c ${Z}/inffast.c ${Z}/inftrees.c ${Z}/trees.c ${Z}/zutil.c
+ ${FDT}/fdt.c ${FDT}/fdt_ro.c ${FDT}/fdt_wip.c ${FDT}/fdt_sw.c ${FDT}/fdt_rw.c ${FDT}/fdt_strerror.c ${FDT}/fdt_empty_tree.c ${FDT}/fdt_addresses.c ${FDT}/fdt_overlay.c ${FDT}/fdt_check.c)
+add_library(vendorpatch STATIC ${SOURCES})
+target_include_directories(vendorpatch PUBLIC include PRIVATE src ${FDT} ${Z} third_party/lz4)
+target_compile_definitions(vendorpatch PRIVATE Z_SOLO)
+if(ANDROID)
+ add_library(vendorpatch_jni SHARED src/jni.cpp)
+ target_link_libraries(vendorpatch_jni PRIVATE vendorpatch)
+ set_target_properties(vendorpatch_jni PROPERTIES OUTPUT_NAME vendorpatch)
+else()
+ add_executable(vendorpatch_cli src/cli.cpp)
+ target_link_libraries(vendorpatch_cli PRIVATE vendorpatch)
+endif()

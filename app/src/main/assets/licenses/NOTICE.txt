@@ -1,0 +1,27 @@
+LK Update Helper / lk升级助手
+
+Original application and native adapter sources: MIT (slot-assistant-LICENSE.txt).
+
+Miuix UI and blur 0.9.4 — https://github.com/compose-miuix-ui/miuix
+Apache License 2.0, included as miuix-LICENSE.txt.
+
+AndroidX Activity / Lifecycle / Compose and JetBrains Compose runtime:
+https://developer.android.com/jetpack/androidx
+https://github.com/JetBrains/compose-multiplatform
+Apache License 2.0.
+
+Kotlin and kotlinx.coroutines:
+https://github.com/JetBrains/kotlin
+https://github.com/Kotlin/kotlinx.coroutines
+Apache License 2.0.
+
+MaterialKolor material-color-utilities 6.0.0:
+https://github.com/jordond/MaterialKolor
+MIT, included as materialkolor-MIT.txt. Generated upstream Material Color
+Utilities algorithms are Apache-2.0 (materialkolor-upstream-Apache-2.0.txt).
+
+Embedded libfdt, LZ4 and zlib notices and full licenses are included alongside
+this file; exact source revisions are listed in native-NOTICES.txt.
+
+Firmware images are read locally on the device; no vendor firmware is bundled
+in this APK. The application does not request Android INTERNET permission.
